@@ -20,7 +20,7 @@ public class FirstTest extends BaseTest {
         System.out.println("Google2 Test Started! " + "Thread Id: " +  Thread.currentThread().getId());
         getDriver().navigate().to("http://www.google.com");
         System.out.println("Google2 Test's Page title is: " + getDriver().getTitle() +" " + "Thread Id: " +  Thread.currentThread().getId());
-        Assert.assertEquals(getDriver().getTitle(), "Google");
+        Assert.assertEquals(getDriver().getTitle(), "Googlesssss");
         System.out.println("Google2 Test Ended! " + "Thread Id: " +  Thread.currentThread().getId());
     }
 
