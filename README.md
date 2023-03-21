@@ -11,5 +11,6 @@ These images are published to the Docker Hub registry at Selenium Docker Hub.
  mvn -s settings.xml clean package
 
  docker-compose -f docker-compose-v3.yml up -d --scale chrome=3 --scale firefox=2
+ 
 
 
