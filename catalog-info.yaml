@@ -10,3 +10,5 @@ spec:
   type: library
   lifecycle: production
   owner: "team-a"
+  dependsOn:
+  - component:accentureone
