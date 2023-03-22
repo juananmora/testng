@@ -20,7 +20,7 @@ public class SecondTest extends BaseTest {
         System.out.println("CTTI Test Started! " + "Thread Id: " +  Thread.currentThread().getId());
         getDriver().navigate().to("https://ctti.gencat.cat/ca/inici");
         System.out.println("Yandex Test's Page title is: " + getDriver().getTitle() +" " + "Thread Id: " + Thread.currentThread().getId());
-        Assert.assertEquals(getDriver().getTitle(), "Inici. x Centre de Telecomunicacions i Tecnologies de la Informació");
+        Assert.assertEquals(getDriver().getTitle(), "Inici. Centre de Telecomunicacions i Tecnologies de la Informació");
         System.out.println("CTTI Test Ended! " + "Thread Id: " +  Thread.currentThread().getId());
     }
 }
