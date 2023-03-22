@@ -27,15 +27,9 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-    - name: Docker Compose Run Action
-      # You may pin to the exact commit or the version.
-      # uses: adrielcodeco/docker-compose-run-action@279848890d86008050ed55bba6a8cffad6668a3f
-      uses: adrielcodeco/docker-compose-run-action@v1
-      with:
-        # relative path to compose file(s)
-        compose-file: ./docker-compose-v3.yml
-        # additional options to pass to `docker-compose` command
-        command: docker-compose up
+    
+    - name: Build Selenium Grid
+      run: docker-compose -f docker-compose-v3.yml up -d
     
     - name: Build with Maven
       run: mvn -s settings.xml clean package --file pom.xml
